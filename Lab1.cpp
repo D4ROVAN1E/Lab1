@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include "trapezoid.h"
+#include "rectangle.h"
 using namespace std;
 
 int main()
@@ -13,7 +14,15 @@ int main()
         switch (numOfFigure)
         {
         case 1:
-            break;
+            double a,b;
+            cout << "Первая сторона прямоугольника: " << endl;
+            cin >> a;
+            cout << "Вторая сторона прямоугольника: " << endl;
+            cin >> b;
+            cout << "Периметр прямоугольника равен:  " << per(a,b) << endl;
+            cout << "Площадь прямоугольника равна: " << sq(a,b) << endl;
+            cout << "Длина диагонали равна:  " << diagonal(a,b) << endl;
+
         case 2:
             break;
         case 3:
