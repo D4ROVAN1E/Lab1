@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include "trapezoid.h"
+#include "triangle.h"
 using namespace std;
 
 int main()
@@ -15,6 +16,22 @@ int main()
         case 1:
             break;
         case 2:
+        double firstSide, secondSide, downSide;
+    cout << "Введите длины сторон треугольника: ";
+    cin >> firstSide >> secondSide >> downSide;
+    if ((firstSide + secondSide > downSide) && (firstSide + downSide > secondSide) && (secondSide + downSide > firstSide)) {
+        cout << "Периметр треугольника: " << perimeter(firstSide, secondSide, downSide) << endl;
+        cout << "Площадь треугольника: " << area_heron(firstSide, secondSide, downSide) << endl;
+        if (isosceles(firstSide, secondSide, downSide)) {
+            cout << "Треугольник является равнобедренным." << endl;
+        }
+        else {
+            cout << "Треугольник не является равнобедренным." << endl;
+        }
+    }
+    else {
+        cout << "Указанные стороны не образуют треугольник." << endl;
+    }
             break;
         case 3:
         {
