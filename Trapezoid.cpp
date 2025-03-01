@@ -1,14 +1,14 @@
 #include <cmath>
-double perimetrTr(double firstSide, double secondSide, double upSide, double downSide)
+double perimetrTr(double FirstSide, double SecondSide, double UpSide, double DownSide)
 {
-	return firstSide + secondSide + upSide + downSide;
+	return FirstSide + SecondSide + UpSide + DownSide;
 }
-double squareTr(double firstSide, double secondSide, double upSide, double downSide)
+double squareTr(double FirstSide, double SecondSide, double UpSide, double DownSide)
 {
-	double p = perimetrTr(firstSide, secondSide, upSide, downSide) / 2;
-	return ((upSide + downSide) / abs(downSide - upSide) * sqrt((p - downSide) * (p - upSide) * (p - downSide - firstSide) * (p - downSide - secondSide)));
+	double p = perimetrTr(FirstSide, SecondSide, UpSide, DownSide) / 2;
+	return ((UpSide + DownSide) / fabs(DownSide - UpSide) * sqrt((p - DownSide) * (p - UpSide) * (p - DownSide - FirstSide) * (p - DownSide - SecondSide)));
 }
-double midLineTr(double firstSide, double secondSide, double upSide, double downSide)
+double midLineTr(double FirstSide, double SecondSide, double UpSide, double DownSide)
 {
-	return ((upSide + downSide) / 2);
+	return ((UpSide + DownSide) / 2);
 }

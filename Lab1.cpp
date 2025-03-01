@@ -2,6 +2,7 @@
 #include "trapezoid.h"
 #include "rectangle.h"
 #include "triangle.h"
+#include "circle.h"
 using namespace std;
 
 int main()
@@ -18,7 +19,7 @@ int main()
             double a,b;
             cout << "\nПервая сторона прямоугольника = ";
             cin >> a;
-            cout << "\nВторая сторона прямоугольника: = ";
+            cout << "\nВторая сторона прямоугольника = ";
             cin >> b;
             cout << "Периметр прямоугольника равен: " << per(a,b) << endl;
             cout << "Площадь прямоугольника равна: " << sq(a,b) << endl;
@@ -43,22 +44,28 @@ int main()
             }
             break;
         case 3:
-        {
-            double firstSide, secondSide, upSide, downSide;
+            double FirstSide, SecondSide, UpSide, DownSide;
             cout << "\nЛевая грань трапеции = ";
-            cin >> firstSide;
+            cin >> FirstSide;
             cout << "\nПарвая грань трапеции = ";
-            cin >> secondSide;
+            cin >> SecondSide;
             cout << "\nВерхняя грань трапеции = ";
-            cin >> upSide;
+            cin >> UpSide;
             cout << "\nНижняя грань трапеции = ";
-            cin >> downSide;
-            cout << "Периметр равен " << perimetrTr(firstSide, secondSide, upSide, downSide) << endl;
-            cout << "Площадь равна " << squareTr(firstSide, secondSide, upSide, downSide) << endl;
-            cout << "Длинна средней линии равна " << midLineTr(firstSide, secondSide, upSide, downSide) << endl;
+            cin >> DownSide;
+            cout << "Периметр равен " << perimetrTr(FirstSide, SecondSide, UpSide, DownSide) << endl;
+            cout << "Площадь равна " << squareTr(FirstSide, SecondSide, UpSide, DownSide) << endl;
+            cout << "Длина средней линии равна " << midLineTr(FirstSide, SecondSide, UpSide, DownSide) << endl;
             break;
-        }
         case 4:
+            double radius, corner;
+            cout << "\nРадиус окружности = ";
+            cin >> radius;
+            cout << "\nУгол сектора = ";
+            cin >> corner;
+            cout << "Длина окружности равна " << lengthCir(radius) << endl;
+            cout << "Площадь окружности равна " << squareCir(radius) << endl;
+            cout << "Площадь сектора окружности равна " << squareCirSectr(corner, radius) << endl;
             break;
         case 5:
             menuActive = 0;
