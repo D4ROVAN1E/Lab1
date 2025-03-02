@@ -1,7 +1,7 @@
 #include <cmath>
 double perimetrTr(double firstSide, double secondSide, double upSide, double downSide)
 {
-	return firstSide + secondSide + upSide + downSide; //Сумма сторон
+	return firstSide + secondSide + upSide + downSide; //Сумма сторон 
 }
 double squareTr(double firstSide, double secondSide, double upSide, double downSide) 
 {
