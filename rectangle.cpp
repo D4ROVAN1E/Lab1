@@ -1,15 +1,15 @@
 #include <cmath>
-double per(double a, double b){
-    return (a+b)*2;
+double per(double Fside, double Sside){
+    return (Fside+Sside)*2;
 }
 
-double sq(double c, double d)
+double sq(double Fside, double Sside)
 {
-    return c*d;
+    return Fside*Sside;
 }
 
-double diagonal(double f, double e)
+double diagonal(double Fside, double Sside)
 {
-    double v = sqrt(pow(f,2)+pow(e,2));
+    double v = sqrt(pow(Fside,2)+pow(Sside,2));
     return v;
 }

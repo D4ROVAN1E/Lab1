@@ -1,3 +1,3 @@
-double per(double a, double b);
-double sq(double c, double d);
-double diagonal(double f, double e);
+double per(double Fside, double Sside);
+double sq(double Fside, double Sside);
+double diagonal(double Fside, double Sside);
