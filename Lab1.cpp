@@ -53,9 +53,13 @@ int main()
             cin >> UpSide;
             cout << "\nНижняя грань трапеции = ";
             cin >> DownSide;
+            if (((FirstSide + SecondSide > (DownSide - UpSide)) && (FirstSide + (DownSide - UpSide) > SecondSide) && ((DownSide - UpSide) + SecondSide > FirstSide)) && (FirstSide > 0 && SecondSide > 0 && UpSide > 0 && DownSide > 0) ) {
             cout << "Периметр равен " << perimetrTr(FirstSide, SecondSide, UpSide, DownSide) << endl;
             cout << "Площадь равна " << squareTr(FirstSide, SecondSide, UpSide, DownSide) << endl;
             cout << "Длина средней линии равна " << midLineTr(FirstSide, SecondSide, UpSide, DownSide) << endl;
+            } else {
+                cout << "Трапеция не существует";
+            }
             break;
         case 4:
             double radius, corner;
@@ -63,9 +67,14 @@ int main()
             cin >> radius;
             cout << "\nУгол сектора = ";
             cin >> corner;
+            if (radius>0 && corner>0){
             cout << "Длина окружности равна " << lengthCir(radius) << endl;
             cout << "Площадь окружности равна " << squareCir(radius) << endl;
             cout << "Площадь сектора окружности равна " << squareCirSectr(corner, radius) << endl;
+            }
+            else{
+            cout << "error"<<endl;
+            }
             break;
         case 5:
             menuActive = 0;
