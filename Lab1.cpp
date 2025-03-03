@@ -21,9 +21,13 @@ int main()
             cin >> a;
             cout << "\nВторая сторона прямоугольника = ";
             cin >> b;
+            if(a>0 && b>0){
             cout << "Периметр прямоугольника равен: " << per(a,b) << endl;
             cout << "Площадь прямоугольника равна: " << sq(a,b) << endl;
             cout << "Длина диагонали равна: " << diagonal(a,b) << endl << endl;
+            }
+            else 
+            cout<<"error"<<endl;
             break;
         case 2:
             double firstSide, secondSide, downSide;
@@ -58,7 +62,7 @@ int main()
             cout << "Площадь равна " << squareTr(FirstSide, SecondSide, UpSide, DownSide) << endl;
             cout << "Длина средней линии равна " << midLineTr(FirstSide, SecondSide, UpSide, DownSide) << endl;
             } else {
-                cout << "Трапеция не существует\n";
+                cout << "Трапеция не существует";
             }
             break;
         case 4:
