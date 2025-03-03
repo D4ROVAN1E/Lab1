@@ -1,6 +1,6 @@
 #include <cmath>
 double perimeter(double firstSide, double secondSide, double downSide) {
-    return firstSide + secondSide + downSide;
+    return firstSide + secondSide + downSide;//perimetr
 }
 double area_heron(double firstSide, double secondSide, double downSide) {
     double polperimetr = (firstSide + secondSide + downSide) / 2;
