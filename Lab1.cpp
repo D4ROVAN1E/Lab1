@@ -58,7 +58,7 @@ int main()
             cout << "Площадь равна " << squareTr(FirstSide, SecondSide, UpSide, DownSide) << endl;
             cout << "Длина средней линии равна " << midLineTr(FirstSide, SecondSide, UpSide, DownSide) << endl;
             } else {
-                cout << "Трапеция не существует";
+                cout << "Трапеция не существует\n";
             }
             break;
         case 4:
