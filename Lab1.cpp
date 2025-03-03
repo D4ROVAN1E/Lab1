@@ -67,7 +67,7 @@ int main()
             cin >> radius;
             cout << "\nУгол сектора = ";
             cin >> corner;
-            if (radius>0 && corner>0){
+            if (radius>0 && (corner>0 && corner <=360)){
             cout << "Длина окружности равна " << lengthCir(radius) << endl;
             cout << "Площадь окружности равна " << squareCir(radius) << endl;
             cout << "Площадь сектора окружности равна " << squareCirSectr(corner, radius) << endl;

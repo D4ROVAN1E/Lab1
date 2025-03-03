@@ -7,5 +7,6 @@ double squareCir(double radius){
     return (M_PI * pow(radius, 2));
 }
 double squareCirSectr(double corner, double radius){
+    
     return (corner / 360 * M_PI * pow(radius, 2));
 }
