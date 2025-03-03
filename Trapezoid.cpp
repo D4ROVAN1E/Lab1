@@ -1,5 +1,5 @@
 #include <cmath> 
-double perimetrTr(double firstSide, double secondSide, double upSide, double downSide)
+double perimetrTr(double firstSide, double secondSide, double upSide, double downSide) //perimert
 {
 	return firstSide + secondSide + upSide + downSide; //Сумма сторон 
 }
